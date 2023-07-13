@@ -19,7 +19,7 @@ export default function BookShow({ book, onDelete, onEdit }) {
 
   let content = <h3>{book.title}</h3>;
   if(showEdit){
-    content = <Bookedit onSbumit={handleSubmit} book={book} />;
+    content = <Bookedit onSubmit={handleSubmit} book={book} />;
   }
   return (
     <div className='book-show'>
